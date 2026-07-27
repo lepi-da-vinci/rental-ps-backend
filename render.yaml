@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: rental-ps-backend
+    env: docker
+    region: singapore
+    plan: free
+    envVars:
+      - key: APP_KEY
+        value: base64:7K5Vp4i0Q/565cZ5qgJg8z33m1W+a5x4u2x+x3x4x5x=
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: "false"
+      - key: DB_CONNECTION
+        value: sqlite
